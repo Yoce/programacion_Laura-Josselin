@@ -2,6 +2,7 @@
 * Autor:Laura Josselin Hernandez Garcia
 * Nombre: CalculatesAreaRectangle.java
 * Description: This program calculates the area for rectangle
+  What´s up!!!!
 ***********/
 import java.util.Scanner;    //Chaparra: Con este comando mandas a llamar una herramienta para poder leer datos \^^/
 public class CalculatesAreaRectangle{
