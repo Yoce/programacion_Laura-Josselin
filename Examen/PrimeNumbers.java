@@ -6,7 +6,7 @@ It shows the prime numbers between 1 and 100.
 
 import javax.swing.*;
 
-public class sin_titulo {
+public class PrimeNumbers {
 
 	public static void main(String args[]) {
 		int c;//contador
