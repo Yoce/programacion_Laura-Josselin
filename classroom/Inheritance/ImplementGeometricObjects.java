@@ -13,5 +13,6 @@ public class ImplementGeometricObjects{
 
     circlelito.toString();
     rectanlgelito.toString();
+    
   }
 }
