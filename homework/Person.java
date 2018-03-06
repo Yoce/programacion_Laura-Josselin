@@ -8,7 +8,7 @@ public class Person{
   private String H="Hombre";
   private String name="";
   private int age=0;
-  private double DNI;
+  private int DNI;
   private char gender='H';
   private double weigth=0;
   private double height=0;
@@ -30,6 +30,11 @@ public class Person{
   }
   //methods
   public Person(){
+    JOptionPane.showMessageDialog(null, this.name=" ");
+    JOptionPane.showMessageDialog(null, this.age=0);
+    JOptionPane.showMessageDialog(null,this.gender=' ');
+    JOptionPane.showMessageDialog(null,this.weigth=0);
+    JOptionPane.showMessageDialog(null,this.height=0);
 
   }
 public Person(String name, int age, char gender){
@@ -41,7 +46,7 @@ public Person(String name, int age, char gender){
   this.height=0;
 
   }
-  public Person(String name, int age, double DNI, char gender, double weigth, double height){
+  public Person(String name, int age, char gender, double weigth, double height){
     this.name=name;
     this.age=age;
     this.DNI=DNI;
@@ -52,16 +57,12 @@ public Person(String name, int age, char gender){
   public int calculateBMI(){
     double bmi=this.weigth/(Math.pow(this.height,2));
     if (bmi<20){
-      JOptionPane.showMessageDialog(null, "You are underweight");
       return -1 ;
       } else if(bmi>=20 && bmi<=25){
-      JOptionPane.showMessageDialog(null, "You are at your ideal weight");
       return 0;
     }else
-    JOptionPane.showMessageDialog(null, "You are overweight");
       return 1;
   }
-
     public Boolean isMayorDeEdad(){
       if (this.age>=18){
         return true;
@@ -69,7 +70,7 @@ public Person(String name, int age, char gender){
       else
       return false;
     }//end isMayorDeEdad
-  public void generateDNI(){
-    this.DNI=(int)(Math.random()*(9999999-1+1)+9999999);
+  public int generateDNI(){
+  return this.DNI=(int)(Math.random()*(9999999-1+1)+9999999);
   }
 }//public class person
