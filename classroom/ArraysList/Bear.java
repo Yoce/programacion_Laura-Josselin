@@ -12,8 +12,9 @@ public class Bear{
   }
   public static void main(String[] args) {
     ArrayList<Bear> teddyBearStore=new ArrayList<Bear>();
-    int opc=Integer.parseInt(JOptionPane.showInputDialog(null,"....MENU....?\n 1.-Add Bear \n 2.-Search... \n 3.-Remove \n 4.-Show all \n 5.-Exit"));
+    int opc;
     do{
+      opc=Integer.parseInt(JOptionPane.showInputDialog(null,"....MENU....?\n 1.-Add Bear \n 2.-Search... \n 3.-Remove \n 4.-Show all \n 5.-Exit"));
       switch (opc){
         case 1: String maker= JOptionPane.showInputDialog("Maker?");
                 String type= JOptionPane.showInputDialog("Type?");
