@@ -22,7 +22,7 @@ public class Bear{
                 break;
         case 2:
           int index =Integer.parseInt(JOptionPane.showInputDialog("Index?"));
-          JOptionPane.showMessageDialog(null,teddyBearStore.get(index));
+          teddyBearStore.get(index).display();
           break;
         case 3:
           index =Integer.parseInt(JOptionPane.showInputDialog("Index to remove?"));
